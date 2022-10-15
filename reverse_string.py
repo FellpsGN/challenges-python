@@ -1,21 +1,21 @@
-#INVERTA A PALAVRA INSERIDA PELO USUÁRIO
-#MEU DESENVOLVIMENTO
-l = str(input('Informe uma palavra: '))
-lista = []
-for i in l:
-    lista.append(i)
+#REVERSE THE WORD ENTERED BY THE USER
+#MY SOLUTION
+word = str(input("Write something: "))
+list_word = []
+for i in word:
+    list_word.append(i)
 
-index = len(lista)-1
-inverso = []
+index = len(list_word)-1
+inverse = []
 
-for i in range(len(lista)):
-    inverso.append(lista[index])
+for i in range(len(list_word)):
+    inverse.append(list_word[index])
     index -= 1
 
-for i in inverso:
+for i in inverse:
     print(i, end="")
 
-#RESPOSTA DO PROBLEMA:
+#ANSWER:
 def reverseString(string):
     newString = ""
     i = len(string)-1
@@ -23,6 +23,7 @@ def reverseString(string):
         newString += string[i]
         i -= 1
     return newString
-
-palavra = str(input("Digite algo: "))
-reverseString(palavra)
+print("")
+palavra = str(input("Write something: "))
+x = reverseString(palavra)
+print(x)
